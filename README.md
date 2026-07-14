@@ -16,7 +16,7 @@ DeliveryPulse consolidates these datasets into a single interactive dashboard, e
 
 ## 🚨 Problem Statement
 
-A fast-growing food delivery company stores delivery logs, rider assignment history, customer complaints, refund records, and order details across multiple disconnected systems.
+A fast-growing food delivery company stores delivery logs, rider assignment history, customer complaints, refund records, and order details across disconnected systems, but operations teams still cannot identify which delivery patterns consistently lead to SLA violations during peak hours.
 
 As a result:
 
@@ -27,6 +27,20 @@ As a result:
 - Manual reporting consumes significant time.
 
 DeliveryPulse solves this problem by providing a centralized analytics platform for operational monitoring and predictive insights.
+
+---
+
+## 🤝 Team Workflow
+
+This repository follows a simple GitHub Flow process so the team can work in parallel without breaking the shared codebase.
+
+- Main stays releasable and only receives reviewed merges.
+- Each task starts on a feature branch named with the issue number, such as `feature/12-delay-analysis`.
+- Every change is tracked in a GitHub issue before code is written.
+- Pull requests must reference the issue and include a short summary, testing notes, and review approval.
+- Commit messages use the conventional format, such as `feat: add delay hotspot chart` or `fix: handle missing delivery times`.
+
+See [TEAM_WORKFLOW.md](TEAM_WORKFLOW.md) and [CONTRIBUTING.md](CONTRIBUTING.md) for the full working agreement.
 
 ---
 
