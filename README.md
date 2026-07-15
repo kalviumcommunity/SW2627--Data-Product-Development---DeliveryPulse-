@@ -122,7 +122,6 @@ See [TEAM_WORKFLOW.md](TEAM_WORKFLOW.md) and [CONTRIBUTING.md](CONTRIBUTING.md) 
 | Pandas | Data Cleaning & Analysis |
 | NumPy | Numerical Computation |
 | SQL | Data Storage & Queries |
-| Scikit-learn | Machine Learning Models |
 | Streamlit | Interactive Dashboard |
 | GitHub Actions | CI/CD Automation |
 

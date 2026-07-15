@@ -1,0 +1,5 @@
+order_id,delivery_minutes,distance_km,zone,rider_delay_minutes,sla_violation,delay_bucket
+102,52.0,5.8,East,14,True,high
+103,41.0,4.1,North,6,False,medium
+104,36.0,2.5,West,4,False,low
+105,38.5,6.0,East,10,False,medium
