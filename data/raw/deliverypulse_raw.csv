@@ -1,0 +1,6 @@
+order_id,delivery_minutes,distance_km,zone,rider_delay_minutes
+101,28.0,3.2,North,2
+102,52.0,5.8,East,14
+103,41.0,4.1,North,6
+104,36.0,2.5,West,4
+105,,6.0,East,10

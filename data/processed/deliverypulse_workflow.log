@@ -1,0 +1,4 @@
+2026-07-15 14:06:21,912 - INFO - Created sample input data at C:\Users\anany\OneDrive\Desktop\SW2627--Data-Product-Development---DeliveryPulse-\data\raw\deliverypulse_raw.csv
+2026-07-15 14:06:21,957 - INFO - Ingested 5 rows from C:\Users\anany\OneDrive\Desktop\SW2627--Data-Product-Development---DeliveryPulse-\data\raw\deliverypulse_raw.csv
+2026-07-15 14:06:21,973 - INFO - Processed 5 rows into 4 rows
+2026-07-15 14:06:21,978 - INFO - Output saved to C:\Users\anany\OneDrive\Desktop\SW2627--Data-Product-Development---DeliveryPulse-\data\processed\deliverypulse_processed.csv
