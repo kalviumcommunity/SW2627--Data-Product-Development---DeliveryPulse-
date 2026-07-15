@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-07-15T15:03:57.389847",
+  "filepath": "C:\\Users\\anany\\OneDrive\\Desktop\\SW2627--Data-Product-Development---DeliveryPulse-\\data\\raw\\sample.csv",
+  "validations": {
+    "file_exists": "File exists and has content",
+    "format": "Format valid: csv",
+    "schema": "Schema valid: 4 columns present",
+    "encoding": "Detected: utf-8 (confidence: 81.4%)",
+    "encoding_name": "utf-8"
+  },
+  "statistics": {
+    "rows": 3,
+    "columns": 4,
+    "file_size_mb": 0.00015,
+    "bytes": 159
+  },
+  "schema_valid": true
+}
