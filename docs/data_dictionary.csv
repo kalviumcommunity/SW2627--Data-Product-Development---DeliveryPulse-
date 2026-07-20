@@ -1,0 +1,12 @@
+column_name,data_type,description,business_meaning,example_value,related_kpi,notes
+customer_id,integer,Unique identifier for customer,Customer ID in CRM system,12456,Customer tracking,Primary key - never null
+customer_name,string,Full customer name as entered in the source system,Customer identity used by support and operations teams,Alice Smith,Customer retention analysis,May contain accents or alternate spellings
+transaction_amount,float,Monetary value of the transaction in USD,Revenue per transaction,150.99,Monthly revenue,Amount paid by customer in dollars
+transaction_date,datetime,Date transaction occurred,When the sale was completed,2025-01-15,Sales velocity,UTC timezone - never null
+delivery_minutes,float,Elapsed minutes from order assignment to completion,Operational delivery duration,42.5,SLA compliance,Used to measure delay performance
+distance_km,float,Distance between restaurant and customer location,Route length for delivery operations,3.8,Route efficiency,Supports delay and routing analysis
+zone,string,Operational service zone,Geographic area used for performance comparison,North,Delay hotspots,Used for zone-level SLA analysis
+rider_delay_minutes,float,Minutes of delay attributed to rider handling,Rider-specific delay contribution,6.0,Rider performance,Non-negative expected in normal operations
+order_id,integer,Unique identifier for delivery order,Order reference in delivery workflow,101,Order tracking,Primary key for delivery records
+delay_bucket,string,Categorized delay severity band,Human-readable delay grouping for reporting,medium,Delay frequency,Derived field used in dashboard summaries
+flag_churn,integer,Churn indicator (0/1),Whether a customer left within the retention window,0,Churn rate prediction,Target variable for retention models
