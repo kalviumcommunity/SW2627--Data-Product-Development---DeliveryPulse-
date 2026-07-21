@@ -1,0 +1,39 @@
+{
+  "timestamp": "2026-07-21T14:04:35.017592",
+  "summary": {
+    "rows_before": 10,
+    "rows_after": 9,
+    "rows_removed": 1,
+    "total_nulls_before": 7,
+    "total_nulls_after": 0
+  },
+  "decisions": {
+    "critical_identifiers": {
+      "columns": [
+        "customer_id"
+      ],
+      "strategy": "drop_rows",
+      "business_reasoning": "Critical identifiers (customer_id, id) cannot be imputed. Rows without identifiers are incomplete records and cannot be traced or linked to other data sources.",
+      "risk_assessment": "Low - removes only records missing key identifiers"
+    },
+    "numerical_columns": {
+      "columns": [
+        "amount"
+      ],
+      "strategy": "median_imputation",
+      "business_reasoning": "Median is robust to outliers and preserves the distribution of numerical values. Appropriate for quantities, amounts, and measurements.",
+      "risk_assessment": "Low - median is a stable central tendency measure"
+    },
+    "categorical_columns": {
+      "columns": [
+        "name",
+        "email",
+        "category",
+        "region"
+      ],
+      "strategy": "mode_imputation",
+      "business_reasoning": "Mode (most common value) preserves categorical distributions. Filling with the most frequent category maintains data integrity.",
+      "risk_assessment": "Low - maintains category distribution"
+    }
+  }
+}

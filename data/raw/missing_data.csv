@@ -1,0 +1,11 @@
+customer_id,name,email,amount,category,region
+1,Alice,alice@example.com,100.50,A,North
+2,Bob,,250.00,B,South
+3,Charlie,charlie@example.com,100.75,A,North
+,Diana,diana@example.com,500.00,C,East
+5,Eve,,200.25,B,South
+6,Frank,frank@example.com,175.50,A,West
+7,Grace,grace@example.com,,B,North
+8,Henry,,300.00,,East
+9,Ivy,ivy@example.com,425.75,C,South
+10,Jack,jack@example.com,150.00,A,
