@@ -1,0 +1,6 @@
+order_id,delivery_minutes,distance_km,zone,rider_delay_minutes,delivery_minutes_was_imputed
+101,28.0,3.2,North,2,False
+102,52.0,5.8,East,14,False
+103,41.0,4.1,North,6,False
+104,36.0,2.5,West,4,False
+105,38.5,6.0,East,10,True

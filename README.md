@@ -209,6 +209,27 @@ Streamlit Dashboard
 Operational Insights
 ```
 
+## 🧹 Missing-Value Handling
+
+Run the DeliveryPulse missing-value assignment against the delivery source:
+
+```text
+python scripts/handle_missing.py
+```
+
+The workflow writes:
+
+- `data/processed/deliverypulse_missing_handled.csv` — cleaned delivery records
+        with `*_was_imputed` audit flags where values were filled.
+- `output/imputation_decisions.json` — before/after null counts, selected
+        strategies, business reasoning, and risk assessment for each source column.
+
+The project-specific policy preserves missing `rider_delay_minutes` values when
+the attribution was not recorded. It never invents a rider delay. Missing
+`order_id` values are treated as critical and their rows are dropped because an
+order cannot be traced without its identifier. Numeric operational measures use
+median imputation and categorical reporting dimensions use mode imputation.
+
 ---
 
 # 📈 Dashboard Modules
