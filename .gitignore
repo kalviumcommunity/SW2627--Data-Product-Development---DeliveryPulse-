@@ -16,6 +16,9 @@ output/*.csv
 !output/dedup_summary.json
 !output/weekly_metrics.csv
 !output/hourly_day_pivot.csv
+!output/validation_passed.csv
+!output/validation_failures.csv
+!output/validation_summary.csv
 output/*.pdf
 
 build/

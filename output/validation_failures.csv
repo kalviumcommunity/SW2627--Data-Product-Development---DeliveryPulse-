@@ -1,0 +1,4 @@
+customer_id,birth_date,price,email,phone,product_category,campaign_start_date,campaign_end_date,start_date,end_date,valid_birth_date_range,valid_price,valid_customer_id,valid_email_not_null,valid_product_category,valid_email_format,valid_phone_format,valid_campaign_dates,valid_end_date_after_start,valid_customer_reference,passes_all_checks
+2.0,2050-07-20,250.0,jane@example.com,987654321,Home,2024-03-01,2024-02-28,2024-03-05,2024-03-04,False,True,True,True,True,True,False,False,False,True,False
+,1990-08-15,-50.0,bobexample.com,12345,,2024-05-01,2024-06-01,2024-05-10,2024-05-20,True,False,False,True,False,False,False,True,True,False,False
+4.0,1975-11-30,75.5,alice@example.com,2223334444,Toys,2024-07-15,2024-08-15,2024-07-20,2024-07-19,True,True,True,True,True,True,True,True,False,True,False
