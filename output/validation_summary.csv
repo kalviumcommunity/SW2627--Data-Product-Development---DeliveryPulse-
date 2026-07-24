@@ -1,0 +1,11 @@
+rule,passed,failed,failure_rate_pct
+valid_birth_date_range,4,1,20.0
+valid_price,4,1,20.0
+valid_customer_id,4,1,20.0
+valid_email_not_null,5,0,0.0
+valid_product_category,4,1,20.0
+valid_email_format,4,1,20.0
+valid_phone_format,3,2,40.0
+valid_campaign_dates,4,1,20.0
+valid_end_date_after_start,3,2,40.0
+valid_customer_reference,4,1,20.0

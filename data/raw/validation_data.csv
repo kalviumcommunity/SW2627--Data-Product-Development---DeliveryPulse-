@@ -1,0 +1,6 @@
+customer_id,birth_date,price,email,phone,product_category,campaign_start_date,campaign_end_date,start_date,end_date
+1,1989-05-10,120.00,john@example.com,1234567890,Electronics,2024-01-01,2024-12-31,2024-01-10,2024-02-10
+2,2050-07-20,250.00,jane@example.com,0987654321,Home,2024-03-01,2024-02-28,2024-03-05,2024-03-04
+,1990-08-15,-50.00,bobexample.com,12345,,2024-05-01,2024-06-01,2024-05-10,2024-05-20
+4,1975-11-30,75.50,alice@example.com,2223334444,Toys,2024-07-15,2024-08-15,2024-07-20,2024-07-19
+5,1980-12-01,0.00,charlie@example.com,1112223333,Books,2024-09-01,2024-12-01,2024-09-10,2024-10-10
