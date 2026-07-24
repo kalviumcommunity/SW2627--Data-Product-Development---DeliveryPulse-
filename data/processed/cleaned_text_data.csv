@@ -1,0 +1,10 @@
+customer_name,product_category,segment,city
+ john , electronics ,B2B, so paulo
+john, electronics,B2B, so paulo
+john, electronics,B2B, so paulo
+jane doe ,home appliances ,SMB, montral
+jane doe,home appliances,SMB,montreal
+example inc,office supplies,businesstobusiness,new york
+example inc ,office supplies,Enterprise,new york 
+test user,consumer goods,consumer,los angeles
+test user ,consumer goods,consumer,los angeles
