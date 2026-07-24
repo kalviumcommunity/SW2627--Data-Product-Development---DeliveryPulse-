@@ -1,0 +1,53 @@
+{
+  "dataset": "data/raw/deliverypulse_raw.csv",
+  "rows_before": 5,
+  "rows_after": 5,
+  "total_nulls_before": 1,
+  "total_nulls_after": 0,
+  "columns": {
+    "order_id": {
+      "column_type": "critical_identifier",
+      "strategy": "drop_rows",
+      "business_reasoning": "Order IDs are required to trace deliveries and must never be invented.",
+      "risk_assessment": "Low when the affected row count is small; otherwise investigate the source system.",
+      "null_count_before": 0,
+      "null_count_after": 0,
+      "rows_affected": 0
+    },
+    "delivery_minutes": {
+      "column_type": "numerical_measure",
+      "strategy": "median_imputation",
+      "business_reasoning": "The median represents a typical delivery and is resistant to unusually long deliveries that could skew the mean.",
+      "risk_assessment": "Medium because the filled value is synthetic and must be excluded or flagged in sensitive KPI analysis.",
+      "null_count_before": 1,
+      "null_count_after": 0,
+      "value_used": 38.5
+    },
+    "distance_km": {
+      "column_type": "numerical_measure",
+      "strategy": "median_imputation",
+      "business_reasoning": "Route distance is needed for route-efficiency analysis; the median limits the influence of unusually long routes.",
+      "risk_assessment": "Medium; imputed distances are flagged for downstream users.",
+      "null_count_before": 0,
+      "null_count_after": 0,
+      "value_used": 4.1
+    },
+    "zone": {
+      "column_type": "categorical_dimension",
+      "strategy": "mode_imputation",
+      "business_reasoning": "Zone is required for hotspot reporting; the most common observed zone is the least disruptive categorical fallback.",
+      "risk_assessment": "Medium because an unknown order may not actually belong to the most common zone.",
+      "null_count_before": 0,
+      "null_count_after": 0,
+      "value_used": "East"
+    },
+    "rider_delay_minutes": {
+      "column_type": "nullable_operational_measure",
+      "strategy": "leave_null",
+      "business_reasoning": "A missing rider attribution means the cause was not recorded. Filling it would falsely assign responsibility and distort rider performance metrics.",
+      "risk_assessment": "Low for data integrity; downstream rider metrics must report the unresolved count.",
+      "null_count_before": 0,
+      "null_count_after": 0
+    }
+  }
+}
