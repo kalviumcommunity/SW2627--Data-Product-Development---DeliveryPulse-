@@ -1,0 +1,26 @@
+{
+  "dataset": "C:\\Users\\kodad\\OneDrive\\Desktop\\SW2627--Data-Product-Development---DeliveryPulse-\\data\\raw\\orders.csv",
+  "benchmark": {
+    "loop_seconds": 0.014181599999574246,
+    "vectorized_seconds": 0.0006463999998231884,
+    "speedup": 21.939356440986042
+  },
+  "validation": {
+    "missing_values": {
+      "amount_normalized": 0,
+      "amount_zscore": 0,
+      "amount_rank_desc": 0
+    },
+    "normalized_range": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "zscore_mean": 1.1119993814645568e-17,
+    "zscore_std": 1.0,
+    "rank_range": {
+      "min": 1,
+      "max": 100000
+    }
+  },
+  "reasoning": "A Python loop computes min-max normalization row-by-row and suffers interpreter overhead. NumPy vectorization computes the same result on the full array in compiled code, producing a large speedup and enabling the result to be attached back to the DataFrame as new columns."
+}
