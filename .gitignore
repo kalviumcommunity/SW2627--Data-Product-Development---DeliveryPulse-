@@ -27,6 +27,13 @@ output/*.csv
 !output/vectorized_optimization_sample.csv
 !output/vectorization_report.json
 !output/vectorization_summary.csv
+!output/distribution_analysis_report.json
+!output/distribution_analysis_summary.csv
+!output/distribution_amount_histogram.png
+!output/distribution_amount_kde.png
+!output/distribution_segment_comparison.png
+!output/distribution_customer_spend.png
+!output/distribution_customer_segment_comparison.png
 output/*.pdf
 
 build/

@@ -1,0 +1,37 @@
+{
+  "dataset": "C:\\Users\\kodad\\OneDrive\\Desktop\\SW2627--Data-Product-Development---DeliveryPulse-\\data\\raw\\orders.csv",
+  "orders_stats": {
+    "label": "Order Amount",
+    "count": 5,
+    "mean": 52.898,
+    "median": 45.0,
+    "std": 32.42732822790061,
+    "skewness": 0.2730914953760558,
+    "kurtosis": 1.4792162069883787,
+    "min": 15.0,
+    "max": 100.0
+  },
+  "orders_bimodal": false,
+  "orders_peak_count": 0,
+  "customer_stats": {
+    "label": "Customer Total Spend",
+    "count": 4,
+    "mean": 66.1225,
+    "median": 62.25,
+    "std": 47.32602369468621,
+    "skewness": 0.08764685544021579,
+    "kurtosis": 1.1540842235357869,
+    "min": 15.0,
+    "max": 124.99
+  },
+  "customer_bimodal": false,
+  "customer_peak_count": 0,
+  "segment_thresholds": {
+    "low_quartile": 22.125,
+    "high_quartile": 106.2475
+  },
+  "interpretation": {
+    "orders": "Order Amount is approximately symmetric. Mean and median are similar. Order Amount is lighter-tailed than a normal distribution.",
+    "customer_spend": "Customer Total Spend is approximately symmetric. Mean and median are similar. Customer Total Spend is lighter-tailed than a normal distribution."
+  }
+}
