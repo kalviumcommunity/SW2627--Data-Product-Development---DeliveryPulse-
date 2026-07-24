@@ -1,0 +1,39 @@
+{
+  "source_tables": {
+    "customers": {
+      "path": "C:\\Users\\kodad\\OneDrive\\Desktop\\SW2627--Data-Product-Development---DeliveryPulse-\\data\\raw\\customers.csv",
+      "rows": 3,
+      "unique_keys": 3
+    },
+    "orders": {
+      "path": "C:\\Users\\kodad\\OneDrive\\Desktop\\SW2627--Data-Product-Development---DeliveryPulse-\\data\\raw\\orders.csv",
+      "rows": 5,
+      "unique_keys": 4
+    }
+  },
+  "join_key": "customer_id",
+  "chosen_join": "left",
+  "join_counts": {
+    "inner": 3,
+    "left": 4,
+    "right": 5,
+    "outer": 6
+  },
+  "audit": {
+    "join_type": "left",
+    "left_rows": 3,
+    "right_rows": 5,
+    "result_rows": 4,
+    "row_delta": 1,
+    "merge_counts": {
+      "both": 3,
+      "left_only": 1,
+      "right_only": 0
+    }
+  },
+  "unmatched": {
+    "customers": 1,
+    "orders": 2
+  },
+  "reasoning": "A left join is selected to preserve all customer master records while enriching them with orders. This identifies customers without orders, preserves history for existing customers, and surfaces orphan orders via unmatched right-side keys. If the business instead required only customers with orders, an inner join would be appropriate. If the business required all orders including those with missing customers, a right or outer join should be used."
+}

@@ -1,0 +1,5 @@
+customer_id,name,email,signup_date,order_id,order_date,amount,status,_merge
+1,Alice,alice@example.com,2025-01-15,101.0,2025-03-01,79.99,completed,both
+1,Alice,alice@example.com,2025-01-15,103.0,2025-03-07,45.0,returned,both
+2,Bob,bob@example.com,2025-02-20,102.0,2025-03-05,24.5,completed,both
+3,Carol,carol@example.com,2025-03-10,,,,,left_only
