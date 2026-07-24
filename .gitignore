@@ -24,6 +24,9 @@ output/*.csv
 !output/join_report.json
 !output/feature_engineered_customers.csv
 !output/feature_engineering_summary.csv
+!output/vectorized_optimization_sample.csv
+!output/vectorization_report.json
+!output/vectorization_summary.csv
 output/*.pdf
 
 build/
