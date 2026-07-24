@@ -12,6 +12,8 @@ __pycache__/
 
 output/*.csv
 !output/dtype_conversion_report.csv
+!output/removed_duplicates_audit.csv
+!output/dedup_summary.json
 output/*.pdf
 
 build/
