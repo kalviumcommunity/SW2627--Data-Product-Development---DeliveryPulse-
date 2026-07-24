@@ -21,7 +21,9 @@ output/*.csv
 !output/validation_summary.csv
 !output/merged_customers_orders.csv
 !output/unmatched_customers.csv
-!output/unmatched_orders.csv
+!output/join_report.json
+!output/feature_engineered_customers.csv
+!output/feature_engineering_summary.csv
 output/*.pdf
 
 build/
