@@ -1,0 +1,49 @@
+{
+  "record_count": 3,
+  "feature_columns": [
+    "transactions_per_month",
+    "avg_spend_per_transaction",
+    "lifetime_value_per_month",
+    "engagement_tier",
+    "spend_quartile",
+    "recency_score",
+    "frequency_score",
+    "monetary_score",
+    "rfm_score",
+    "customer_health_score"
+  ],
+  "validation": {
+    "missing_values": {
+      "transactions_per_month": 0,
+      "avg_spend_per_transaction": 0,
+      "lifetime_value_per_month": 0,
+      "engagement_tier": 0,
+      "spend_quartile": 0,
+      "recency_score": 0,
+      "frequency_score": 0,
+      "monetary_score": 0,
+      "rfm_score": 0,
+      "customer_health_score": 0
+    },
+    "engagement_tier_counts": {
+      "low": 3,
+      "medium": 0,
+      "high": 0
+    },
+    "spend_quartile_counts": {
+      "Q1": 1,
+      "Q2": 1,
+      "Q4": 1,
+      "Q3": 0
+    },
+    "rfm_score_range": {
+      "min": 7,
+      "max": 13
+    },
+    "health_score_range": {
+      "min": 1.0,
+      "max": 4.15
+    }
+  },
+  "business_reasoning": "The engineered features normalize raw counts for customer tenure, bin engagement into business-friendly tiers, and combine recency/frequency/monetary signals into a single health score. This prevents raw totals from being interpreted out of context and supports segment-level actions for retention and growth."
+}
