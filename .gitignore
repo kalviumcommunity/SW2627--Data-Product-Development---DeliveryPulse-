@@ -19,6 +19,9 @@ output/*.csv
 !output/validation_passed.csv
 !output/validation_failures.csv
 !output/validation_summary.csv
+!output/merged_customers_orders.csv
+!output/unmatched_customers.csv
+!output/unmatched_orders.csv
 output/*.pdf
 
 build/
