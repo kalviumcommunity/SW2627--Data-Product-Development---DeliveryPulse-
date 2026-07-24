@@ -14,6 +14,8 @@ output/*.csv
 !output/dtype_conversion_report.csv
 !output/removed_duplicates_audit.csv
 !output/dedup_summary.json
+!output/weekly_metrics.csv
+!output/hourly_day_pivot.csv
 output/*.pdf
 
 build/
